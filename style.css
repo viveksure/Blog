@@ -1,0 +1,797 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: "tahoma", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: RGB(31, 30, 30);
+    color: white;
+    overflow-x: hidden;
+  }
+  nav{
+    position: fixed;
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background:RGB(25, 25, 25);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+    z-index: 100;
+  }
+  nav .logo{
+    color:#fff;
+    font-size: 35px;
+    font-weight: 600;
+  }
+  nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  nav ul li{
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    color: #111;
+    background: rgb(104, 210, 92);
+  }
+  nav .menu-btn i{
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+  }
+  input[type="checkbox"]{
+    display: none;
+  }
+  
+ .heading{
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; 
+  box-shadow: 0 20px 40px black;
+  width: 90%;
+
+ }
+ 
+.made{
+  font-size: 50px;
+}
+#made h2{
+  font-size: 30px;
+  color: white;
+  margin-bottom: 10px;
+}
+.cap{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 120px;
+}
+.down{
+  margin-top: 40px;
+  border-radius: 8px;
+  box-shadow: 0 20px 40px black;
+  animation: boxShadowAnimation infinite linear;
+  width: 80%;
+}
+.down:hover{
+  box-shadow: 0 40px 80px black;
+}
+.down::-webkit-scrollbar {
+  display: none;
+}
+  .intro{
+    height: 740px;
+    width: 100%;
+    background-color: RGB(31, 30, 30);
+    color:#66FCF1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    justify-content: center;
+}
+.intro h1{
+  font-weight: 120;
+}
+.intro p{
+    color: white;
+    overflow: hidden;
+}
+.move {
+  display: inline-block; /* This will make sure that each word is on its own line*/
+}
+
+/* Apply the hover effect to the specific letter */
+.move span:hover {
+  transform: translateY(5px); /* The amount of bounce for the letter */
+  transition: transform ease-in-out 0.2s; /* The duration and easing function of the transition */
+}
+#home h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+  
+  #home p {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  a{
+    text-decoration: none;
+  }
+.button {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+}
+.button-1 {
+  width: 270px;
+  background-color: transparent;
+  border: 3px solid #00d7c3;
+  border-radius: 30px;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  color: #00d7c3;
+  font-size: 1.5rem;
+	letter-spacing: 0.1rem;
+}
+.button-1:hover {
+  box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+  border: 3px solid #00d7c3;
+}
+
+.move{
+  position: relative;
+  animation: slide 1s;
+}
+#abstract{
+  width: 100%; 
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  flex-direction: column;
+ 
+}
+.about-content{
+  width: 80%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    overflow: scroll;
+    border-radius: 8px;
+  box-shadow: 0 20px 40px black;
+  animation: boxShadowAnimation infinite linear;
+}
+.about-content:hover{
+  box-shadow: 0 40px 80px black;
+}
+.about-content::-webkit-scrollbar {
+  display: none;
+}
+
+#made .heading{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.about-text{
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    padding-top: 10px;
+}
+.about-text p{
+  overflow: auto;
+  font-size: 20px;
+}
+.heading{
+    font-size: 50px;
+    color: #66FCF1;
+    font-weight: 1;
+}
+
+#introduction{
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#introduction .about-content{
+  height:700px;
+  width:80%;
+}
+
+#problem{
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#problem .about-content{
+  height:800px;
+  width:80%;
+}
+
+#proposed{
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#proposed .about-content{
+  height:1250px;
+  width:80%;
+}
+
+#implementation{
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#implementation .about-content{
+  height:1850px;
+  width:80%;
+}
+
+#conclusion{
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#conclusion .about-content{
+  height:800px;
+  width:80%;
+}
+#contact{
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  
+}
+#contact .heading{
+  width: 100%;
+}
+  .contact {
+    background-color: #29323C;
+    color: #fff;
+    padding: 80px 0;
+  }
+  
+  .contact-form {
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    background-color:#1b1b1b;
+    box-shadow: 0 10px 20px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  .con1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  #myForm
+  {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-form:hover{
+    box-shadow: 0 20px 40px black;
+  }
+  .contact-form h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+    padding: 30px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+    width: 100%;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: 1;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #29323C;
+    margin-bottom: 15px;
+    color: white;
+    font-size: medium;
+  }
+#message{
+  font-size: medium;
+}
+.button-2 {
+  width: 200px;
+  height: 50px;
+  background-color: transparent;
+  border: 3px solid #00d7c3;
+  border-radius: 20px;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  color: #00d7c3;
+  font-size: 1.5rem;
+	letter-spacing: 0.1rem;
+	margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0px;
+}
+.button-2:hover {
+  box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+  border: 3px solid #00d7c3;
+}
+  footer{
+    width: 100%;
+    line-height: 2.5;
+  }
+ #foot{
+  background-color: #3b3939;
+  display: flex;
+  justify-content: center;
+ }
+ .box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+#foot .three{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#foot h1{
+  color: #00d7c3;
+}
+#foot h1:hover{
+  color: rgb(32, 210, 82);
+  cursor: pointer;
+}
+.links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.links li{
+  list-style: none;
+}
+.links li a{
+  color: white;
+  padding: 8px;
+}
+.links li a:hover{
+  color: black;
+  background-color: #FFD700;
+  border-radius: 10px;
+}
+.icons a{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.icons p{
+  color: white;
+}
+.icons i{
+  margin-right: 8px;
+}
+.box .cont{
+  display: flex;
+  flex-direction: column;
+}
+.cont i{
+  line-height: 3;
+  margin-right: 8px;
+}
+.ene{
+  display: flex;
+}
+.credit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+  .jump:hover{
+    display: inline-block;
+    animation: jump 0.5s infinite;
+  }
+  @keyframes jump{
+    0%{
+        transform: translateY(-7px);
+    }
+    100%{
+        transform: translateY(7px);
+    }
+}
+
+
+ 
+  @keyframes slide {
+    from { left: -200; }
+    to { left: 1px; }
+  }
+
+  @media (max-width: 1000px){
+    nav{
+      padding: 0 40px 0 50px;
+    }
+  }
+
+  /*For Mobiles */
+  @media (max-width: 426px) {
+    body {
+     overflow-x: hidden;
+     background-color: RGB(31, 30, 30);
+    }
+    
+    nav .menu-btn i{
+      display: block;
+    }
+    #click:checked ~ .menu-btn i:before{
+      content: "\f00d";
+    }
+    nav ul{
+      position: fixed;
+      top: 80px;
+      left: -100%;
+      background: #111;
+      height: 100vh;
+      width: 100%;
+      text-align: center;
+      display: block;
+      transition: all 0.3s ease;
+    }
+    #click:checked ~ ul{
+      left: 0;
+    }
+    nav ul li{
+      width: 100%;
+      margin: 40px 0;
+    }
+    nav ul li a{
+      width: 100%;
+      margin-left: -100%;
+      display: block;
+      font-size: 20px;
+      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    #click:checked ~ ul li a{
+      margin-left: 0px;
+    }
+    nav ul li a.active,
+    nav ul li a:hover{
+      background: none;
+      color: cyan;
+    }
+
+    .intro{
+      height: 720px;
+      width: 100%;
+      background-color: RGB(31, 30, 30);
+      color:#66FCF1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left:20px ;
+  }
+  .cta{
+     width: 280px;
+  }
+  .intro h1{
+    font-weight: 120;
+  }
+  .intro p{
+      color: white;
+      overflow: hidden;
+  }
+  .move {
+    display: inline-block; /* This will make sure that each word is on its own line*/
+  }
+  .heading{
+    width: 100%;
+  }
+    #about{
+      width: 100%;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .about-text{
+      padding-left: 10px;
+      padding-right: 10px;
+      overflow: auto;
+    }
+
+    .about-content{
+      width: 90%;
+      
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 20px 40px black;
+    overflow: hidden;
+      align-items: center;
+      justify-content: center;
+  }
+  #abstract .about-content{
+    height: 800px;
+  }
+  #introduction .about-content{
+    height: 2300px;
+  }
+  #problem .about-content{
+    height: 2100px;
+  }
+  #proposed .about-content{
+    height: 4000px;
+  }
+  #implementation .about-content{
+    height: 6300px;
+  }
+  #conclusion .about-content{
+    height: 2800px;
+  }
+  .about-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+    color: white;
+    padding-top: 10px;
+}
+.about-text p{
+  overflow: auto;
+  font-size: 20px;
+}
+
+    #contact{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      background-color: RGB(31, 30, 30);
+    }
+    .contact-form{
+      margin-left: 20px;
+      width: 90%;
+    }
+    #foot{
+      width: 100%;
+    }
+  }
+
+  /*For Tablets */
+  @media(width>426px) and (width<769px){
+  
+    body {
+      overflow-x: hidden;
+      background-color: RGB(31, 30, 30);
+     }
+    nav .menu-btn i{
+      display: block;
+    }
+    #click:checked ~ .menu-btn i:before{
+      content: "\f00d";
+    }
+    nav ul{
+      position: fixed;
+      top: 80px;
+      left: -100%;
+      background: #111;
+      height: 100vh;
+      width: 100%;
+      text-align: center;
+      display: block;
+      transition: all 0.3s ease;
+    }
+    #click:checked ~ ul{
+      left: 0;
+    }
+    nav ul li{
+      width: 100%;
+      margin: 40px 0;
+    }
+    nav ul li a{
+      width: 100%;
+      margin-left: -100%;
+      display: block;
+      font-size: 20px;
+      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    #click:checked ~ ul li a{
+      margin-left: 0px;
+    }
+    nav ul li a.active,
+    nav ul li a:hover{
+      background: none;
+      color: cyan;
+    }
+
+    .intro{
+      height: 720px;
+      width: 100%;
+      background-color: RGB(31, 30, 30);
+      color:#66FCF1;
+      display: flex;
+      flex-direction: column;
+      padding-left: 30px;
+      justify-content: center;
+  }
+  .intro h1{
+    font-weight: 120;
+  }
+  .intro p{
+      color: white;
+      overflow: hidden;
+  }
+  .move {
+    display: inline-block; /* This will make sure that each word is on its own line*/
+  }
+
+  #about{
+    width: 100%;
+    margin: 0px;
+  }
+  
+  .about-text p{
+    padding-left: 10px;
+    padding-top: 10px;
+    overflow: auto;
+    height: 100%;
+  }
+
+  .about-content{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 20px 40px black;
+  overflow: hidden;
+}
+#about .heading{
+  width: 100%;
+}
+.heading{
+  width: 100%;
+}
+
+
+
+
+
+  
+  #contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .contact-form{
+    width: 80%;
+  }
+
+  #foot{
+    width: 100%;
+  }
+}
+@media(width>768px) and (width<1440px)
+{
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+
+ 
+
+}
+@media(width>770px) and (width<1440px){
+  
+}
+@media(width>426px) and (width<591px){
+
+  
+}
+@media(width<620px)
+{
+   #foot .three{
+    display: flex;
+    flex-direction: column;
+  }
+}
+  
+
+  
+  
+  
+  
